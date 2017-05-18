@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "WavyFlowLayout.h"
 
-@interface ViewController ()
+@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
+@property (nonatomic) UICollectionViewLayout *defaultLayout;
+@property (nonatomic) WavyFlowLayout *customWavyFlowLayout;
+
+
 
 @end
 
@@ -16,13 +23,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.defaultLayout = self.myCollectionView.collectionViewLayout;
+    self.customWavyFlowLayout = [[WavyFlowLayout alloc]init];
+    [self.customWavyFlowLayout prepareLayout];
+    self.myCollectionView.collectionViewLayout = self.customWavyFlowLayout;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark Data Source Methods
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 10;
+    
+    
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor orangeColor];
+    
+    
+    
+    return cell;
 }
 
 

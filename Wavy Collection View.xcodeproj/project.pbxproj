@@ -13,6 +13,7 @@
 		9283D8B61ECDFF6B00F5F8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9283D8B41ECDFF6B00F5F8E5 /* Main.storyboard */; };
 		9283D8B81ECDFF6B00F5F8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9283D8B71ECDFF6B00F5F8E5 /* Assets.xcassets */; };
 		9283D8BB1ECDFF6B00F5F8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9283D8B91ECDFF6B00F5F8E5 /* LaunchScreen.storyboard */; };
+		9283D8C41ECE01A000F5F8E5 /* WavyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9283D8C31ECE01A000F5F8E5 /* WavyFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9283D8B71ECDFF6B00F5F8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9283D8BA1ECDFF6B00F5F8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9283D8BC1ECDFF6B00F5F8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9283D8C21ECE01A000F5F8E5 /* WavyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavyFlowLayout.h; sourceTree = "<group>"; };
+		9283D8C31ECE01A000F5F8E5 /* WavyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WavyFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				9283D8B11ECDFF6B00F5F8E5 /* ViewController.h */,
 				9283D8B21ECDFF6B00F5F8E5 /* ViewController.m */,
 				9283D8B41ECDFF6B00F5F8E5 /* Main.storyboard */,
+				9283D8C21ECE01A000F5F8E5 /* WavyFlowLayout.h */,
+				9283D8C31ECE01A000F5F8E5 /* WavyFlowLayout.m */,
 				9283D8B71ECDFF6B00F5F8E5 /* Assets.xcassets */,
 				9283D8B91ECDFF6B00F5F8E5 /* LaunchScreen.storyboard */,
 				9283D8BC1ECDFF6B00F5F8E5 /* Info.plist */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9283D8C41ECE01A000F5F8E5 /* WavyFlowLayout.m in Sources */,
 				9283D8B31ECDFF6B00F5F8E5 /* ViewController.m in Sources */,
 				9283D8B01ECDFF6B00F5F8E5 /* AppDelegate.m in Sources */,
 				9283D8AD1ECDFF6B00F5F8E5 /* main.m in Sources */,
