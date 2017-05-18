@@ -32,7 +32,7 @@
     NSMutableArray<UICollectionViewLayoutAttributes *> *newAttrs = [[NSMutableArray alloc]init];
     CGFloat heightNeutral = self.collectionView.frame.size.height/2;
 
-    CGFloat xValue = self.collectionView.frame.size.width/[superAttrs count];
+//    CGFloat xValue = self.collectionView.frame.size.width/[superAttrs count];
     NSInteger count = 1;
     for (UICollectionViewLayoutAttributes *attribute in superAttrs) {
         UICollectionViewLayoutAttributes *newAttribute = [attribute copy];
@@ -41,9 +41,9 @@
         CGFloat randY = arc4random_uniform(self.collectionView.frame.size.height);
         
       
-             newAttribute.frame = CGRectMake(xValue * count, randY, self.itemSize.width, self.itemSize.height * (randY/heightNeutral));
+             newAttribute.frame = CGRectMake(newAttribute.frame.origin.x, randY, self.itemSize.width, self.itemSize.height * (randY/heightNeutral));
        
-        
+        //xValue * count
        
         count ++;
         [newAttrs addObject:newAttribute];
