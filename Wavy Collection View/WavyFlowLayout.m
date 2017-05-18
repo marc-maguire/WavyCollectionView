@@ -30,7 +30,7 @@
     
     NSMutableArray<UICollectionViewLayoutAttributes *> *newAttrs = [[NSMutableArray alloc]init];
     CGFloat heightNeutral = self.collectionView.frame.size.height/2;
-    
+
     CGFloat xValue = self.collectionView.frame.size.width/[superAttrs count];
     NSInteger count = 1;
     for (UICollectionViewLayoutAttributes *attribute in superAttrs) {
@@ -49,6 +49,16 @@
     }
     
     
+//to make a linear scaling size from regular size at y = 0 to 4x the size at max y, use the below. runs into even more aggressive situation of items popping off screen.
+//    CGFloat maxY = self.collectionView.frame.size.height;
+//    CGFloat heightScale = 4;
+
+
+//        CGFloat heightMultiplier = 1 + ((randY/maxY)*heightScale);
+//        
+//        newAttribute.frame = CGRectMake(xValue * count, randY, self.itemSize.width, self.itemSize.height * heightMultiplier);
+//        
+ 
     
     return newAttrs;
     
