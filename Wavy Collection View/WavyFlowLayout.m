@@ -8,7 +8,18 @@
 
 #import "WavyFlowLayout.h"
 
+@interface WavyFlowLayout ()
+
+@end
+
 @implementation WavyFlowLayout
 
+
+-(void)prepareLayout {
+    
+    self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.itemSize = CGSizeMake(100, 50);
+    self.minimumInteritemSpacing = CGFLOAT_MAX;
+}
 
 @end
