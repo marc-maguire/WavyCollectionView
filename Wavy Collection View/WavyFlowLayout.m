@@ -20,6 +20,7 @@
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.itemSize = CGSizeMake(100, 50);
     self.minimumInteritemSpacing = CGFLOAT_MAX;
+
 }
 
 -(NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
